@@ -4,6 +4,7 @@ import org.example.ex010302.Apple;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Section0201 {
@@ -16,5 +17,9 @@ public class Section0201 {
         }
 
         return result;
+    }
+
+    public static void prettyPrintApple(Apple apple, Consumer<Apple> consumer) {
+        consumer.accept(apple);
     }
 }
